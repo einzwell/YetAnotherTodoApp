@@ -6,10 +6,6 @@
                     <h2 class="text-xl font-semibold text-gray-900">
                         Create New Task
                     </h2>
-                    <a href="{{ route('todos.index') }}" class="btn-secondary">
-                        <i class="fas fa-arrow-left mr-2"></i>
-                        Back to Tasks
-                    </a>
                 </div>
 
                 <form method="POST" action="{{ route('todos.store') }}">
