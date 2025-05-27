@@ -24,32 +24,32 @@
             </div>
 
             @if (Route::has('login'))
-                <div class="space-x-4">
+                <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
                     @auth
                         <p class="text-lg text-gray-700 mb-4">
                             You're currently logged in as <b>{{ Auth::user()->name }}</b>
                         </p>
-                        <a href="{{ route('todos.index') }}" class="inline-flex items-center px-6 py-3 bg-blue-600 border border-transparent rounded-md font-semibold text-white hover:bg-blue-700 transition">
+                        <a href="{{ route('todos.index') }}" class="flex items-center justify-center px-6 py-3 bg-blue-600 border border-transparent rounded-md font-semibold text-white hover:bg-blue-700 transition">
                             <i class="fas fa-arrow-right mr-2"></i>
                             Go to Dashboard
                         </a>
                     @else
-                        <a href="{{ route('login') }}" class="inline-flex items-center px-6 py-3 bg-blue-600 border border-transparent rounded-md font-semibold text-white hover:bg-blue-700 transition">
+                        <a href="{{ route('login') }}" class="flex items-center justify-center px-6 py-3 bg-blue-600 border border-transparent rounded-md font-semibold text-white hover:bg-blue-700 transition">
                             <i class="fas fa-sign-in-alt mr-2"></i>
                             Log in
                         </a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="inline-flex items-center px-6 py-3 bg-white border border-blue-600 rounded-md font-semibold text-blue-600 hover:bg-blue-50 transition">
+                            <a href="{{ route('register') }}" class="flex items-center justify-center px-6 py-3 bg-white border border-blue-600 rounded-md font-semibold text-blue-600 hover:bg-blue-50 transition">
                                 <i class="fas fa-user-plus mr-2"></i>
                                 Register
                             </a>
                         @endif
                     @endauth
-                        <a href="{{ route('about') }}" class="inline-flex items-center px-6 py-3 bg-gray-100 border border-transparent rounded-md font-semibold text-blue-600 hover:bg-gray-200 transition">
-                            <i class="fas fa-info-circle mr-1"></i>
-                            About
-                        </a>
+                    <a href="{{ route('about') }}" class="flex items-center justify-center px-6 py-3 bg-white border border-blue-600 rounded-md font-semibold text-blue-600 hover:bg-blue-50 transition">
+                        <i class="fas fa-info-circle mr-1"></i>
+                        About
+                    </a>
                 </div>
             @endif
         </div>

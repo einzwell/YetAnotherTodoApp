@@ -57,16 +57,16 @@
             <!-- Navigation Links -->
             <div class="navigation-links">
                 @auth
-                    <a href="{{ route('todos.index') }}" class="btn btn-primary">
+                    <a href="{{ route('todos.index') }}" class="flex items-center justify-center btn btn-primary">
                         <i class="fas fa-arrow-left"></i>
                         Back to Dashboard
                     </a>
                 @else
-                    <a href="{{ route('login') }}" class="btn btn-primary">
+                    <a href="{{ route('login') }}" class="flex items-center justify-center btn btn-primary">
                         <i class="fas fa-sign-in-alt"></i>
-                        Get Started
+                        Login Now
                     </a>
-                    <a href="{{ route('register') }}" class="btn btn-secondary">
+                    <a href="{{ route('register') }}" class="flex items-center justify-center btn btn-secondary">
                         <i class="fas fa-user-plus"></i>
                         Create Account
                     </a>
