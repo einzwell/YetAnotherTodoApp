@@ -110,7 +110,7 @@
 
                                     <!-- Content -->
                                     <div class="todo-content">
-                                        <div class="todo-title {{ $todo->is_completed ? 'completed' : '' }}">
+                                        <div class="todo-title {{ $todo->is_completed ? 'completed' : '' }} truncate">
                                             {{ $todo->title }}
                                         </div>
                                         @if($todo->description)
@@ -118,35 +118,6 @@
                                                 {{ Str::limit($todo->description, 100) }}
                                             </div>
                                         @endif
-{{--                                        <div class="todo-meta">--}}
-{{--                                            <span>--}}
-{{--                                                <i class="fas fa-calendar-plus text-xs mr-1"></i>--}}
-{{--                                                Created {{ $todo->created_at->format('M j, Y') }}--}}
-{{--                                            </span>--}}
-{{--                                            @if($todo->updated_at != $todo->created_at)--}}
-{{--                                                <span>--}}
-{{--                                                    <i class="fas fa-edit text-xs mr-1"></i>--}}
-{{--                                                    Updated {{ $todo->updated_at->format('M j, Y') }}--}}
-{{--                                                </span>--}}
-{{--                                            @endif--}}
-{{--                                            @if($todo->due_date)--}}
-{{--                                                <span class="due-date {{ $todo->isOverdue() ? 'overdue' : ($todo->isDueToday() ? 'today' : '') }}">--}}
-{{--                                                    <i class="fas fa-calendar text-xs mr-1"></i>--}}
-{{--                                                    Due {{ $todo->due_date->format('M j, Y') }}--}}
-{{--                                                    @if($todo->isOverdue())--}}
-{{--                                                        (Overdue)--}}
-{{--                                                    @elseif($todo->isDueToday())--}}
-{{--                                                        (Today)--}}
-{{--                                                    @endif--}}
-{{--                                                </span>--}}
-{{--                                            @endif--}}
-{{--                                            @if($todo->completed_at)--}}
-{{--                                                <span class="text-green-600">--}}
-{{--                                                    <i class="fas fa-check-circle text-xs mr-1"></i>--}}
-{{--                                                    Completed {{ $todo->completed_at->format('M j, Y') }}--}}
-{{--                                                </span>--}}
-{{--                                            @endif--}}
-{{--                                        </div>--}}
                                     </div>
 
                                     <!-- Actions -->
