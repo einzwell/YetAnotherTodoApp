@@ -74,12 +74,6 @@ class TodoController extends Controller
             ->with('success', 'Todo item created successfully!');
     }
 
-    public function show(Todo $todo): View
-    {
-        $this->authorize('view', $todo);
-        return view('todos.show', compact('todo'));
-    }
-
     public function edit(Todo $todo): View
     {
         $this->authorize('update', $todo);

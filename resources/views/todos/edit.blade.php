@@ -152,14 +152,25 @@
                         </div>
                     </div>
 
-                    <div class="flex gap-3 pt-4 ">
-                        <button type="submit" class="btn-primary">
-                            <i class="fas fa-save mr-2"></i>
-                            Update Task
-                        </button>
-                        <a href="{{ route('todos.show', $todo) }}" class="btn-secondary">
+                    <div class="flex gap-3 pt-4 justify-between">
+                        <a href="{{ route('todos.index') }}" class="btn-secondary">
                             Cancel
                         </a>
+                        <div class="flex gap-2">
+                            <form method="POST" action="{{ route('todos.destroy', $todo) }}" class="inline">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn-secondary bg-red-600 hover:bg-red-500 text-white hover:text-white"
+                                        onclick="return confirm('Are you sure you want to delete this task?')">
+                                    <i class="fas fa-trash mr-2"></i>
+                                    Delete
+                                </button>
+                            </form>
+                            <button type="submit" class="btn-primary">
+                                <i class="fas fa-save mr-2"></i>
+                                Update
+                            </button>
+                        </div>
                     </div>
                 </form>
             </div>
