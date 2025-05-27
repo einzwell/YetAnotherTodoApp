@@ -26,6 +26,9 @@
             @if (Route::has('login'))
                 <div class="space-x-4">
                     @auth
+                        <p class="text-lg text-gray-700 mb-4">
+                            You're currently logged in as <b>{{ Auth::user()->name }}</b>
+                        </p>
                         <a href="{{ route('todos.index') }}" class="inline-flex items-center px-6 py-3 bg-blue-600 border border-transparent rounded-md font-semibold text-white hover:bg-blue-700 transition">
                             <i class="fas fa-arrow-right mr-2"></i>
                             Go to Dashboard
@@ -43,6 +46,10 @@
                             </a>
                         @endif
                     @endauth
+                        <a href="{{ route('about') }}" class="inline-flex items-center px-6 py-3 bg-gray-100 border border-transparent rounded-md font-semibold text-blue-600 hover:bg-gray-200 transition">
+                            <i class="fas fa-info-circle mr-1"></i>
+                            About
+                        </a>
                 </div>
             @endif
         </div>
