@@ -176,21 +176,4 @@
             </div>
         </div>
     </div>
-
-    <script>
-        // Auto-submit toggle form with confirmation for better UX
-        document.addEventListener('DOMContentLoaded', function() {
-            const toggleForm = document.querySelector('form[action*="toggle"]');
-            if (toggleForm) {
-                toggleForm.addEventListener('submit', function(e) {
-                    const isCompleted = {{ $todo->is_completed ? 'true' : 'false' }};
-                    const action = isCompleted ? 'mark as pending' : 'mark as complete';
-
-                    if (!confirm(`Are you sure you want to ${action} this task?`)) {
-                        e.preventDefault();
-                    }
-                });
-            }
-        });
-    </script>
 </x-app-layout>
