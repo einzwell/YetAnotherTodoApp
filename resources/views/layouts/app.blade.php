@@ -28,6 +28,9 @@
             </h1>
         </div>
         <div class="user-menu relative inline-block text-left">
+            <a href="{{ route('about') }}" class="px-5">
+                About
+            </a>
             <button id="userMenuButton" type="button" class="inline-flex items-center text-gray-600 hover:text-blue-600 font-medium focus:outline-none" onclick="document.getElementById('userDropdown').classList.toggle('hidden')">
                 {{ Auth::user()->name }}
                 <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
