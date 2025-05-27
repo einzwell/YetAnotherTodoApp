@@ -62,14 +62,14 @@
                         @enderror
                     </div>
 
-                    <div class="flex gap-3 pt-4">
+                    <div class="flex gap-3 pt-4 justify-between">
+                        <a href="{{ route('todos.index') }}" class="btn-secondary">
+                            Cancel
+                        </a>
                         <button type="submit" class="btn-primary">
                             <i class="fas fa-save mr-2"></i>
                             Create Task
                         </button>
-                        <a href="{{ route('todos.index') }}" class="btn-secondary">
-                            Cancel
-                        </a>
                     </div>
                 </form>
             </div>
