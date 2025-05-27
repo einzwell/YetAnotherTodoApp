@@ -1,6 +1,13 @@
 # Yet Another Todo App
 
-A full-stack todo list application, built with Laravel 11, Laravel Breeze, and PostgreSQL.
+**Yet Another Todo App** is a simple web application that allows users to create, read, update, and delete tasks 
+(a.k.a. todos). Bui;t with Laravel and utilising PostgreSQL, It is designed to be a lightweight and easy-to-use tool 
+for managing personal tasks and to-do lists.
+
+This application is built as a final project for the course "Web-Based Programming" at Bina Nusantara University 
+in 2025.
+
+A demo of this application is available at [todo.einzwell.dev](https://todo.einzwell.dev).
 
 ## Features
 
@@ -34,22 +41,14 @@ A full-stack todo list application, built with Laravel 11, Laravel Breeze, and P
     ```bash
     php artisan migrate
     ```
-6. Install Laravel Breeze:
+6. Compile assets:
     ```bash
-    php artisan breeze:install blade
     npm run build
     ```
 7. Start the development server:
     ```bash
     php artisan serve
     ```
-
-## Requirements
-
-- PHP 8.2+
-- Laravel 11
-- PostgreSQL 17
-- Node.js & NPM
 
 ## Authors
 
