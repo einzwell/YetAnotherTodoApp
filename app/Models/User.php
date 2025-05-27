@@ -45,4 +45,19 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function todos()
+    {
+        return $this->hasMany(Todo::class);
+    }
+
+    public function completedTodos()
+    {
+        return $this->hasMany(Todo::class)->where('is_completed', true);
+    }
+
+    public function pendingTodos()
+    {
+        return $this->hasMany(Todo::class)->where('is_completed', false);
+    }
 }
