@@ -24,11 +24,8 @@
             </div>
 
             @if (Route::has('login'))
-                <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
+                <div class="space-y-4">
                     @auth
-                        <p class="text-lg text-gray-700 mb-4">
-                            You're currently logged in as <b>{{ Auth::user()->name }}</b>
-                        </p>
                         <a href="{{ route('todos.index') }}" class="flex items-center justify-center px-6 py-3 bg-blue-600 border border-transparent rounded-md font-semibold text-white hover:bg-blue-700 transition">
                             <i class="fas fa-arrow-right mr-2"></i>
                             Go to Dashboard
