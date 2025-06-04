@@ -21,8 +21,8 @@
 <div class="min-h-screen bg-gray-100">
     <!-- Header -->
     <div class="header">
-        <div style="display: inline-flex; align-items: center;">
-            <h1><i class="fas fa-check-circle text-blue-600 mr-4"></i></h1>
+        <div class="flex items-center justify-between gap-4 px-2">
+            <h1><i class="fas fa-check-circle text-blue-600"></i></h1>
             <h1 style="text-align: left">
                 Yet Another Todo App
             </h1>

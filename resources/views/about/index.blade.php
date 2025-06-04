@@ -49,8 +49,11 @@
 
             <!-- Development Credits -->
             <section class="text-center">
+                <p class="text-xs text-gray-500 mb-1">
+                    Developed by Yoga Smara (<u style="color:cornflowerblue"><a target="_blank" rel="noopener noreferrer" href="https://einzwell.dev">@einzwell</a></u>)
+                </p>
                 <p class="text-xs text-gray-500">
-                    Made by Yoga Smara (<u style="color:cornflowerblue"><a target="_blank" rel="noopener noreferrer" href="https://einzwell.dev">@einzwell</a></u>)
+                    Contributors: Rafli (<u style="color:cornflowerblue"><a target="_blank" rel="noopener noreferrer" href="https://github.com/FLYY27)">@FLYY27</a></u>)
                 </p>
             </section>
 

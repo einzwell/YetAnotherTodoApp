@@ -52,4 +52,5 @@ A demo of this application is available at [todo.einzwell.dev](https://todo.einz
 
 ## Authors
 
-Yoga Smara ([@einzwell](https://github.com/einzwell))
+- Yoga Smara ([@einzwell](https://github.com/einzwell))
+- Rafli ([@FLYY27](https://github.com/FLYY27))
