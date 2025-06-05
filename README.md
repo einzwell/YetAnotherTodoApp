@@ -1,7 +1,7 @@
 # Yet Another Todo App
 
 **Yet Another Todo App** is a simple web application that allows users to create, read, update, and delete tasks 
-(a.k.a. todos). Bui;t with Laravel and utilising PostgreSQL, It is designed to be a lightweight and easy-to-use tool 
+(a.k.a. todos). Built with Laravel and PostgreSQL, It is designed to be a lightweight and easy-to-use tool 
 for managing personal tasks and to-do lists.
 
 This application is built as a final project for the course "Web-Based Programming" at Bina Nusantara University 
